@@ -13,48 +13,48 @@ const char* sex_var = "mfcx";
 int main()
 {
     srand(time(NULL));
-    //    Time start(rand() % 24, rand() % 60, rand() % 60);
-    //    Time finish(rand() % 24, rand() % 60, rand() % 60);
-    //    Time result;
+       Time start(rand() % 24, rand() % 60, rand() % 60);
+       Time finish(rand() % 24, rand() % 60, rand() % 60);
+       Time result;
 
-    //    cout << start << endl;
-    //    cout << finish << endl;
+       cout << start << endl;
+       cout << finish << endl;
 
-    //    cout << start << endl;
-    //    cout << finish << endl;
+       cout << start << endl;
+       cout << finish << endl;
 
-    //    result = finish - start;
-    //    cout << "res - : " << result;
-    //    result = start + finish;
-    //    cout << "res + : " << result;
+       result = finish - start;
+       cout << "res - : " << result;
+       result = start + finish;
+       cout << "res + : " << result;
 
-    //    cout << result-- << endl;
-    //    cout << --result << endl;
-    //    cout << result++ << endl;
-    //    cout << ++result << endl;
+       cout << result-- << endl;
+       cout << --result << endl;
+       cout << result++ << endl;
+       cout << ++result << endl;
 
-    //    Parallelepiped* figures = new Parallelepiped[13];
+       Parallelepiped* figures = new Parallelepiped[13];
 
-    //    for (int i = 0; i < 13; i++) {
-    //        figures[i].set_sides(
-    //            rand() % 100 * 0.1 + 0.1,
-    //            rand() % 100 * 0.1 + 0.1,
-    //            rand() % 100 * 0.1 + 0.1);
-    //        cout << "Parallelipiped " << i + 1 << endl;
-    //        cout << figures[i];
-    //    }
+       for (int i = 0; i < 13; i++) {
+           figures[i].set_sides(
+               rand() % 100 * 0.1 + 0.1,
+               rand() % 100 * 0.1 + 0.1,
+               rand() % 100 * 0.1 + 0.1);
+           cout << "Parallelipiped " << i + 1 << endl;
+           cout << figures[i];
+       }
 
-    //    Parallelepiped sum;
+       Parallelepiped sum;
 
-    //    sum = figures[rand() % 13]
-    //        + figures[rand() % 13]
-    //        + figures[rand() % 13]
-    //        + figures[rand() % 13]
-    //        + figures[rand() % 13];
-    //    cout << "sum of five random parallelepipeds: " << endl;
-    //    cout << sum;
+       sum = figures[rand() % 13]
+           + figures[rand() % 13]
+           + figures[rand() % 13]
+           + figures[rand() % 13]
+           + figures[rand() % 13];
+       cout << "sum of five random parallelepipeds: " << endl;
+       cout << sum;
 
-    //    delete[] figures;
+       delete[] figures;
     int size = rand() % 86 + 13;
     Student* persons = new Student[size];
 
